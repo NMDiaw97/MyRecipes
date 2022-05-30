@@ -20,6 +20,7 @@ ul {
 }
  .nav{
   display: flex;
+  padding: 0px 40px;
   flex-direction: row;
   background-color: brown;
   justify-content: center;
