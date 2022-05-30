@@ -1,9 +1,12 @@
 function Home() {
     return (
+
         <nav className="navbar">
-            <div className="container">
-                <div className="logo">logo</div>
                 <ul className="nav">
+                    <li className="toggle"><i className="fas fa-bars"></i></li>
+                    <li className="logo">
+                        <a href="#">logo</a>
+                    </li>
                     <li className="item">
                         <a href="#">Breakfast</a>
                     </li>
@@ -13,11 +16,14 @@ function Home() {
                     <li className="item">
                         <a href="#">Dinner</a>
                     </li>
-                    
+                    <li className="item">
+                        <a href="#">login</a>
+                    </li>
                 </ul>
-                <div className="login">login</div>
-            </div>
+           
         </nav>
+
+
     );
 }
 
