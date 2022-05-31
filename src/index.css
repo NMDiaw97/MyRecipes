@@ -1,16 +1,13 @@
 
 * {
   box-sizing: border-box;
-}
-body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 .navbar {
-  background-color: rgb(224, 207, 207);
-  padding: 0px 40px; 
+  background-color: rgb(230, 198, 238);
+  padding: 20px 40px; 
   align-items: center;
   height:100%;
   
@@ -22,7 +19,6 @@ ul {
   display: flex;
   padding: 0px 40px;
   flex-direction: row;
-  background-color: brown;
   justify-content: center;
   width: 100%;
   
@@ -36,8 +32,8 @@ ul {
 }
 .nav li {
   margin:   0px 5%;
-  background-color: aqua;
   width: auto;
+  
 
 }
 
@@ -45,7 +41,6 @@ ul {
   display: none;
 }
 .logo{
-  background-color: aqua;
   flex: 1;
 }
 
@@ -56,14 +51,31 @@ ul {
  
   .nav{
     width: 100%;
-    background-color: rgb(49, 15, 82);
     text-align: center;
     flex-direction: column;
   }
 
+  .nav :nth-of-type(6){
+    text-align:center;
+  }
+  .logo {
+    position: absolute;
+    left: 5px;
+    top: 10px ;
+    background-color: rgb(230, 198, 238);
 
- 
+  }
+  .toggle{
+    background-color: rgb(230, 198, 238);
+    position: absolute;
+    top: 10px;
+    right: 5px;
+  }
 
+  .nav :nth-of-type(n+3){
+    margin-top: 40px;
+  }
+  
 }
 
 
