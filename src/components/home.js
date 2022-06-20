@@ -1,3 +1,10 @@
+import { useState } from "react";
+
+const Item = (props) =>{
+    const itemList = props.items.map((skill)=> <li className="item" key={skill}>{skill}</li>)
+    return itemList
+}
+
 function Home() {
     return (
 
@@ -5,20 +12,9 @@ function Home() {
                 <ul className="nav">
                     <li className="toggle"><i className="fas fa-bars"></i></li>
                     <li className="logo">
-                        <a href="#">logo</a>
+                        <a href="/accueil">logo</a>
                     </li>
-                    <li className="item">
-                        <a href="#">Breakfast</a>
-                    </li>
-                    <li className="item">
-                        <a href="#">Lunch</a>
-                    </li>
-                    <li className="item">
-                        <a href="#">Dinner</a>
-                    </li>
-                    <li className="item">
-                        <a href="#">login</a>
-                    </li>
+                    <Item items={['Breakfast','Lunch','Dinner','login']}/>
                 </ul>
            
         </nav>
