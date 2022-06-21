@@ -24,25 +24,28 @@ ul {
   
 }
 
-.nav :nth-of-type(6){
+.nav :nth-of-type(4){
   flex: 1;
   text-align:right;
-  
+ 
 
 }
+.nav :nth-of-type(1){
+  flex: 1;
+  text-align: right;
+}
+
 .nav li {
   margin:   0px 5%;
   width: auto;
   
-
 }
 
 .toggle {
   display: none;
 }
-.logo{
-  flex: 1;
-}
+
+
 
 @media(max-width:500px) {
   .toggle {
@@ -56,7 +59,10 @@ ul {
     flex-direction: column;
   }
 
-  .nav :nth-of-type(6){
+  .nav :nth-of-type(4){
+    text-align:center;
+  }
+  .nav :nth-of-type(1){
     text-align:center;
   }
   .logo {
@@ -70,17 +76,16 @@ ul {
     background-color: rgb(230, 198, 238);
     position: absolute;
     top: 10px;
-    right: 5px;
+    right: 8px;
     
   }
 
-  .nav :nth-of-type(n+3){
+  .nav :nth-of-type(n+2){
     margin-top: 40px;
   
   }
-  nav .item{
+ .navClosed{
     display: none;
-
   }
   
 }
