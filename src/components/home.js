@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function Home() {
    
-    const [toggle, setToggle] = useState(true);
+    const [toggle, setToggle] = useState(false);
 
     const hamburgerMenu = () => {
         setToggle(!toggle)
@@ -12,8 +12,8 @@ function Home() {
     return (
         <nav className="navbar">
             <h3 className="logo">logo</h3>
-            <h2 className="toggle"><i className={toggle ? 'fas fa-bars' : 'fas fa-times'} onClick={hamburgerMenu}></i></h2>
-                <ul className={toggle? 'navClosed': 'nav'}>
+            <h2 className="toggle"><i className={toggle ? 'fas fa-times' : 'fas fa-bars'} onClick={hamburgerMenu}></i></h2>
+                <ul className={toggle? 'navToggled': 'nav'}>
                     <li className="item">
                         <a href="/accueil">Breakfast</a>
                     </li>

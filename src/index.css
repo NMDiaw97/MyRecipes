@@ -47,22 +47,22 @@ ul {
 
 
 
-@media(max-width:500px) {
+@media screen and (max-width:500px) {
   .toggle {
     display: block;
     cursor: pointer;
   }
  
-  .nav{
+  .navToggled{
     width: 100%;
     text-align: center;
     flex-direction: column;
   }
 
-  .nav :nth-of-type(4){
+  .navToggled :nth-of-type(4){
     text-align:center;
   }
-  .nav :nth-of-type(1){
+  .navToggled :nth-of-type(1){
     text-align:center;
   }
   .logo {
@@ -80,11 +80,11 @@ ul {
     
   }
 
-  .nav :nth-of-type(n+2){
+  .navToggled :nth-of-type(n+2){
     margin-top: 40px;
   
   }
- .navClosed{
+ .nav{
     display: none;
   }
   
