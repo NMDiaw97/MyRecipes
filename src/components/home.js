@@ -41,7 +41,18 @@ function Home() {
                 <img className="image4" src={img4} alt="" />
 
             </div>
+            <section className="description">
+                <p>Mmhh!</p>
+                <p>Welcome to delicious meals land !
+                    Where you can find  plenty of flavours and tastes.
+                    Don’t hesitate to share your talent with us too.
 
+                </p>
+            </section>
+            <section className="searchBar">
+                <input />
+                <button className="searchButton" type="submit">Rechercher</button>
+            </section>
 
 
 

@@ -15,6 +15,13 @@ ul {
   list-style-type: none;
 }
 
+li,
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 150;
+  font-size: 18px;
+}
+
 .nav {
   display: flex;
   padding: 0px 40px;
@@ -88,6 +95,63 @@ ul {
   left: 75%;
   top: 48%;
 
+}
+
+.description {
+  position: absolute;
+  width: 450px;
+  height: 301px;
+  left: 100px;
+  top: 435px;
+}
+
+p:first-of-type {
+  font-family: 'Cherish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 112px;
+  color: #CD8021;
+}
+
+p:last-of-type {
+  font-family: 'Charm';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+
+  color: #000000;
+}
+
+.searchBar {
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  left: 30%;
+  top: 120%;
+}
+
+
+.searchBar input {
+  position: absolute;
+  border: none;
+  background: rgba(196, 196, 196, 0.47);
+  border-radius: 25px;
+  width: 80%;
+  height: 75%;
+}
+
+.searchBar button {
+  position: absolute;
+  width: 25%;
+  height: 75%;
+  left: 87%;
+  top: 1%;
+
+  background: #A3B86E;
+  border-radius: 20px;
+  border: none;
 }
 
 
